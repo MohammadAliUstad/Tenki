@@ -1,6 +1,6 @@
 package com.yugentech.tenki.ui.screens
 
-import android.widget.Toast
+import android.content.Intent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -27,6 +27,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.core.net.toUri
 import androidx.navigation.NavController
 import com.yugentech.tenki.ui.components.ContactButton
 
@@ -119,8 +120,11 @@ fun AboutScreen(
                 icon = Icons.Default.Email,
                 label = "Contact Developer",
                 onClick = {
-                    Toast.makeText(context, "Visit: https://linkedin.com", Toast.LENGTH_SHORT)
-                        .show()
+                    val intent = Intent(
+                        Intent.ACTION_VIEW,
+                        "https://www.linkedin.com/in/mohammad-ali-ustad-700516228/".toUri()
+                    )
+                    context.startActivity(intent)
                 }
             )
 
@@ -130,10 +134,14 @@ fun AboutScreen(
                 icon = Icons.Default.Menu,
                 label = "Visit GitHub",
                 onClick = {
-                    Toast.makeText(context, "Visit: https://github.com", Toast.LENGTH_SHORT)
-                        .show()
+                    val intent = Intent(
+                        Intent.ACTION_VIEW,
+                        "https://github.com/MohammadAliUstad".toUri()
+                    )
+                    context.startActivity(intent)
                 }
             )
+
         }
     }
 }
