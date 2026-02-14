@@ -38,9 +38,9 @@ Welcome to **Tenki**, a beautifully crafted weather application designed to keep
 
 <div align="center">
   
-<img src="Screenshots/IMG_0345.JPG" width="30%"/>
-<img src="Screenshots/IMG_0346.JPG" width="30%"/>
-<img src="Screenshots/IMG_0347.JPG" width="30%"/>
+<img src="Screenshots/IMG_45.JPG" width="30%"/>
+<img src="Screenshots/IMG_46.JPG" width="30%"/>
+<img src="Screenshots/IMG_47.JPG" width="30%"/>
 
 </div>
 
